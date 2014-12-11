@@ -3,7 +3,7 @@ FROM dockerfile/ubuntu
 # Install dependencies
 RUN apt-get update
 RUN apt-get upgrade -yqq
-RUN apt-get -yqq install make gcc tar git
+RUN apt-get -yqq install make gcc tar git libyajl-dev
 RUN apt-get -yqq clean
 RUN rm -rf /var/lib/apt/lists/*
 
